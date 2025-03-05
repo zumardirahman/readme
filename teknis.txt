@@ -1,0 +1,2 @@
+git -c http.sslVerify=false pull
+git -c http.sslVerify=false clone https://gitdti.unand.ac.id/academic/my-unand/frontend-my-unand
