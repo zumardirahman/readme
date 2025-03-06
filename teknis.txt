@@ -1,2 +1,6 @@
 git -c http.sslVerify=false pull
 git -c http.sslVerify=false clone https://gitdti.unand.ac.id/academic/my-unand/frontend-my-unand
+
+
+link lihat file laravel 11:
+https://localhost:8443/storage/uploads/67c9e7f9d7224.pdf
