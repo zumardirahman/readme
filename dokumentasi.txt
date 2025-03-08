@@ -1,0 +1,9 @@
+docker build -t php-fpm-myunand .
+docker build --network host --no-cache -t app-phpfpm:8.2 .  
+
+docker builder prune -af
+
+docker-compose up -d
+docker exec -it idcontainer
+    composer install
+    
