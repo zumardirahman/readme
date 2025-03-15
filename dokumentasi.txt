@@ -1,4 +1,4 @@
-docker build -t php-fpm-myunand .
+docker build --network host --no-cache -t aplikasi-phpfpm82:base-app-1.0-builder .
 docker build --network host --no-cache -t app-phpfpm:8.2 .  
 
 docker builder prune -af
