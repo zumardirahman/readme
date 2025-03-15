@@ -1,12 +1,27 @@
 ssh -T -p 443 git@ssh.github.com
 
-git config --global url."ssh://git@ssh.github.com:443/".insteadOf "ssh://git@github.com/"
+git config --global url."ssh://git@ssh.github.com:443/".insteadOf "git@github.com"
 
 git clone git@ssh.github.com:443:zumardirahman/docker-apps.git
 
 
 -------------------------
+
+git config --global -l
+git config --global url."ssh://git@10.250.25.36/".insteadof "ssh://git@gitdti.unand.ac.id/"
+git config --global --unset core.sshcommand
+git config --global --unset url.ssh://git@ssh.github.com:443/.insteadof
+
+
+
+----------------------------OK
+
+ssh-keygen -t rsa -b 4096 -C "zumardi_rahman@lptik.unand.ac.id"
+
+cat  ~/.ssh/id_rsa.pub
+
 nano ~/.ssh/config
+
 Host github.com
     Hostname ssh.github.com
     User git
@@ -14,9 +29,10 @@ Host github.com
     IdentityFile ~/.ssh/id_rsa
     IdentitiesOnly yes
 
+Host gitdti.unand.ac.id
+    Hostname 10.250.25.36
+    User git
+    Port 22
+    IdentityFile ~/.ssh/id_rsa
 
---------------------------
-
-git config --global url."ssh://git@10.250.25.36/".insteadof "ssh://git@gitdti.unand.ac.id/"
-git config --global --unset core.sshcommand
-git config --global -l
+----------------------------OK
