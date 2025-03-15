@@ -13,3 +13,8 @@ Host github.com
     Port 443
     IdentityFile ~/.ssh/id_rsa
     IdentitiesOnly yes
+
+
+--------------------------
+
+git config --global url."ssh://git@10.250.25.36/".insteadof "ssh://git@gitdti.unand.ac.id/"
