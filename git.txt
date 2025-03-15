@@ -18,3 +18,5 @@ Host github.com
 --------------------------
 
 git config --global url."ssh://git@10.250.25.36/".insteadof "ssh://git@gitdti.unand.ac.id/"
+git config --global --unset core.sshcommand
+git config --global -l
